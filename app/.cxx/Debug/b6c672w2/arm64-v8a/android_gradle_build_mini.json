@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/anjar/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/b6c672w2/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/anjar/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/b6c672w2/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "racecarcontroller::@6890427a1f51a3e7e1df": {
+      "artifactName": "racecarcontroller",
+      "abi": "arm64-v8a",
+      "output": "/home/anjar/AndroidStudioProjects/RaceCarController/app/build/intermediates/cxx/Debug/b6c672w2/obj/arm64-v8a/libracecarcontroller.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".ui.gamepad.GamepadFragment">
+
+
+
+
+    <com.example.racecarcontroller.GamepadIndicator
+        android:id="@+id/gamepad_indicator"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_up"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="UP" />
+
+        <Button
+            android:id="@+id/button_down"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DOWN" />
+
+        <Button
+            android:id="@+id/button_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="LEFT" />
+
+        <Button
+            android:id="@+id/button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="RIGHT" />
+
+        <Button
+            android:id="@+id/button_x"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/button_y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Y" />
+
+        <Button
+            android:id="@+id/button_a"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/button_b"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/refreshDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="REFRESH" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

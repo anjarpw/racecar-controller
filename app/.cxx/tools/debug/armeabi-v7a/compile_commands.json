@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/armeabi-v7a",
+  "command": "/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi30 --sysroot=/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dracecarcontroller_EXPORTS -isystem /home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -g  -fno-limit-debug-info -fPIC -o CMakeFiles/racecarcontroller.dir/main.cpp.o -c /home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/main.cpp",
+  "file": "/home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/main.cpp"
+},
+{
+  "directory": "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/armeabi-v7a",
+  "command": "/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi30 --sysroot=/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dracecarcontroller_EXPORTS -isystem /home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -g  -fno-limit-debug-info -fPIC -o CMakeFiles/racecarcontroller.dir/AndroidOut.cpp.o -c /home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/AndroidOut.cpp",
+  "file": "/home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/AndroidOut.cpp"
+},
+{
+  "directory": "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/armeabi-v7a",
+  "command": "/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi30 --sysroot=/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dracecarcontroller_EXPORTS -isystem /home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -g  -fno-limit-debug-info -fPIC -o CMakeFiles/racecarcontroller.dir/Renderer.cpp.o -c /home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/Renderer.cpp",
+  "file": "/home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/Renderer.cpp"
+},
+{
+  "directory": "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/armeabi-v7a",
+  "command": "/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi30 --sysroot=/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dracecarcontroller_EXPORTS -isystem /home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -g  -fno-limit-debug-info -fPIC -o CMakeFiles/racecarcontroller.dir/Shader.cpp.o -c /home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/Shader.cpp",
+  "file": "/home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/Shader.cpp"
+},
+{
+  "directory": "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/armeabi-v7a",
+  "command": "/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi30 --sysroot=/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dracecarcontroller_EXPORTS -isystem /home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -g  -fno-limit-debug-info -fPIC -o CMakeFiles/racecarcontroller.dir/TextureAsset.cpp.o -c /home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/TextureAsset.cpp",
+  "file": "/home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/TextureAsset.cpp"
+},
+{
+  "directory": "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/armeabi-v7a",
+  "command": "/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi30 --sysroot=/home/anjar/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dracecarcontroller_EXPORTS -isystem /home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -g  -fno-limit-debug-info -fPIC -o CMakeFiles/racecarcontroller.dir/Utility.cpp.o -c /home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/Utility.cpp",
+  "file": "/home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/Utility.cpp"
+}
+]

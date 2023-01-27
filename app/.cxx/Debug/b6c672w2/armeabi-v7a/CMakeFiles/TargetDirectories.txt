@@ -1,0 +1,3 @@
+/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/b6c672w2/armeabi-v7a/CMakeFiles/racecarcontroller.dir
+/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/b6c672w2/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/b6c672w2/armeabi-v7a/CMakeFiles/rebuild_cache.dir
