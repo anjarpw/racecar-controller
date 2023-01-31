@@ -65,19 +65,9 @@ class GamepadFragment : Fragment() {
         val b = binding!!
         viewModel.state.observe(viewLifecycleOwner, Observer<GamepadState> { gamepad: GamepadState? ->
             b.gamepadIndicator.updateGamepad(gamepad!!)
-            b.text.text = gamepad.toString()
             Log.d("GAMEPAD OBSERVED", gamepad.toString())
         })
 
-        b.buttonA.setOnClickListener {
-            viewModel.changeState { x -> x.buttonA = !x.buttonA }
-        }
-        b.buttonB.setOnClickListener {
-            viewModel.changeState { x -> x.buttonB = !x.buttonB }
-        }
-        b.buttonX.setOnClickListener {
-            viewModel.changeState { x -> x.buttonX = !x.buttonX }
-        }
         b.refreshDevice.setOnClickListener {
             gameControllerDeviceIds = getGameControllerIds()
         }

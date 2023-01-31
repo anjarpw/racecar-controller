@@ -10,19 +10,6 @@ import androidx.lifecycle.findViewTreeViewModelStoreOwner
 import com.example.racecarcontroller.ui.gamepad.GamepadState
 import com.example.racecarcontroller.ui.gamepad.GamepadViewModel
 
-class DimensionResolver(val view: View, val w: Float, val h: Float) {
-    fun getNormalizedPosition(x: Float, y: Float): PointF {
-        var newX = view.width * x / w
-        var newY = view.height * y / h
-        return PointF(newX, newY)
-    }
-
-    fun getNormalizedSize(x: Float, y: Float): PointF {
-        var newX = view.width * x / w
-        var newY = view.height * y / h
-        return PointF(newX, newY)
-    }
-}
 
 class GamepadIndicator : View {
 
@@ -36,7 +23,7 @@ class GamepadIndicator : View {
     }
 
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
-        this.resolver = DimensionResolver(this, 7F, 3F)
+        this.resolver = DimensionResolver(this, RectF(0F, 0F,7F, 3F))
     }
 
     fun toRect(center: PointF, dimension: PointF): RectF {
@@ -51,14 +38,14 @@ class GamepadIndicator : View {
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         var off = Paint()
-        off.setColor(Color.parseColor("#000000"))
-        off.setStyle(Paint.Style.FILL)
-        off.setAntiAlias(true)
+        off.color = resources.getColor(R.color.black)
+        off.style = Paint.Style.FILL
+        off.isAntiAlias = true
 
         var on = Paint()
-        on.setColor(Color.parseColor("#FF0000"))
-        on.setStyle(Paint.Style.FILL)
-        on.setAntiAlias(true)
+        on.color = resources.getColor(R.color.red_engine)
+        on.style = Paint.Style.FILL
+        on.isAntiAlias = true
 
         var blockSize = this.resolver.getNormalizedSize(1F, 1F)
         var directionalButtonSize = this.resolver.getNormalizedSize(0.9F, 0.9F)
@@ -77,7 +64,7 @@ class GamepadIndicator : View {
         var xPoint = this.resolver.getNormalizedPosition(4.5F + centerOffsideForActionButtons, 1.5F)
         var bPoint = this.resolver.getNormalizedPosition(6.5F - centerOffsideForActionButtons, 1.5F)
         var aPoint = this.resolver.getNormalizedPosition(5.5F, 2.5F - centerOffsideForActionButtons)
-        canvas.drawARGB(20, 0, 0, 0);
+        canvas.drawARGB(20, 0, 0, 0)
 
         canvas.apply {
 

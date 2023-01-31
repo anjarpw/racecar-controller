@@ -26,10 +26,7 @@ class MainActivity : GameActivity() {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
         setContentView(R.layout.main_activity)
-        val buttonClick = findViewById<Button>(R.id.button_x_top)
-        buttonClick.setOnClickListener {
-            viewModel.gamepad.changeState { x -> x.buttonX = !x.buttonX }
-        }
+        supportActionBar?.hide()
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.container, GamepadFragment.newInstance())

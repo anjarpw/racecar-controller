@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 
-class GamepadState() {
+class GamepadState {
     var buttonA = false
     var buttonB = false
     var buttonX = false
@@ -39,7 +39,7 @@ class GamepadViewModel : ViewModel() {
 
     fun setState(newState: GamepadState) {
         Log.d("GAMEPAD", newState.toString())
-        _state.setValue(newState)
+        _state.value = newState
     }
 
     fun changeState(function: (GamepadState) -> Unit) {

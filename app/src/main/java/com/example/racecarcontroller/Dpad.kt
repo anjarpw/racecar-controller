@@ -18,13 +18,13 @@ class Dpad {
         directionPressed = when {
             // Check if the AXIS_HAT_X value is -1 or 1, and set the D-pad
             // LEFT and RIGHT direction accordingly.
-            xaxis.compareTo(-1.0f) == 0 -> Dpad.LEFT
-            xaxis.compareTo(1.0f) == 0 -> Dpad.RIGHT
+            xaxis.compareTo(-1.0f) == 0 -> LEFT
+            xaxis.compareTo(1.0f) == 0 -> RIGHT
             // Check if the AXIS_HAT_Y value is -1 or 1, and set the D-pad
             // UP and DOWN direction accordingly.
-            yaxis.compareTo(-1.0f) == 0 -> Dpad.UP
-            yaxis.compareTo(1.0f) == 0 -> Dpad.DOWN
-            else -> Dpad.CENTER
+            yaxis.compareTo(-1.0f) == 0 -> UP
+            yaxis.compareTo(1.0f) == 0 -> DOWN
+            else -> CENTER
         }
 
         return directionPressed

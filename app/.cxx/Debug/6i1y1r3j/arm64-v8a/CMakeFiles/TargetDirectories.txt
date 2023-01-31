@@ -1,3 +1,3 @@
-/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/arm64-v8a/CMakeFiles/racecarcontroller.dir
-/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/arm64-v8a/CMakeFiles/edit_cache.dir
-/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/arm64-v8a/CMakeFiles/racecarcontroller.dir
+/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/arm64-v8a/CMakeFiles/rebuild_cache.dir

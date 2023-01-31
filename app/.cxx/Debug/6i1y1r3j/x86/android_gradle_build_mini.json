@@ -1,26 +1,26 @@
 {
   "buildFiles": [
-    "/home/anjar/AndroidStudioProjects/RaceCarController/app/src/main/cpp/CMakeLists.txt"
+    "/home/anjar/sidejobs/racecar-controller/app/src/main/cpp/CMakeLists.txt"
   ],
   "cleanCommandsComponents": [
     [
       "/home/anjar/Android/Sdk/cmake/3.22.1/bin/ninja",
       "-C",
-      "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/x86",
+      "/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86",
       "clean"
     ]
   ],
   "buildTargetsCommandComponents": [
     "/home/anjar/Android/Sdk/cmake/3.22.1/bin/ninja",
     "-C",
-    "/home/anjar/AndroidStudioProjects/RaceCarController/app/.cxx/Debug/6i1y1r3j/x86",
+    "/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86",
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
     "racecarcontroller::@6890427a1f51a3e7e1df": {
       "artifactName": "racecarcontroller",
       "abi": "x86",
-      "output": "/home/anjar/AndroidStudioProjects/RaceCarController/app/build/intermediates/cxx/Debug/6i1y1r3j/obj/x86/libracecarcontroller.so",
+      "output": "/home/anjar/sidejobs/racecar-controller/app/build/intermediates/cxx/Debug/6i1y1r3j/obj/x86/libracecarcontroller.so",
       "runtimeFiles": []
     }
   }
