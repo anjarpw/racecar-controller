@@ -10,20 +10,20 @@ import androidx.core.content.ContextCompat
 class DirectionalIndicator : View {
 
     private var _direction: Float = 0F
-
     fun updateDirection(direction: Float) {
         _direction = direction
         this.invalidate()
     }
 
-    private var resolver: DimensionResolver
+    var resolver: DimensionResolver
+        private set
 
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         this.resolver = DimensionResolver(this, RectF(0F, 0F, 10F, 2F))
         updateDirection(-0.5F)
     }
 
-    val thinLine: Paint = with(Paint()){
+    private val thinLine: Paint = with(Paint()){
         color = ContextCompat.getColor(context, R.color.black)
         style = Paint.Style.STROKE
         isAntiAlias = true
@@ -31,7 +31,7 @@ class DirectionalIndicator : View {
         this
     }
 
-    var on: Paint = with(Paint()){
+    private val on: Paint = with(Paint()){
         color = ContextCompat.getColor(context, R.color.red_engine)
         style = Paint.Style.FILL
         isAntiAlias = true

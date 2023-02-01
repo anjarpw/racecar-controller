@@ -1,8 +1,9 @@
 # ninja log v5
-0	711	1675177962346289425	CMakeFiles/racecarcontroller.dir/Shader.cpp.o	4920791c8a15a22e
-1220	1253	1675177962886257203	/home/anjar/sidejobs/racecar-controller/app/build/intermediates/cxx/Debug/6i1y1r3j/obj/x86_64/libracecarcontroller.so	e80e970b42e82d23
-0	786	1675177962422284890	CMakeFiles/racecarcontroller.dir/AndroidOut.cpp.o	fb47d1beb60613c1
-0	1033	1675177962670270092	CMakeFiles/racecarcontroller.dir/TextureAsset.cpp.o	3161ea5eb3996d3e
-0	1219	1675177962854259113	CMakeFiles/racecarcontroller.dir/main.cpp.o	7eb2b0f4049bcc89
-0	1219	1675177962854259113	CMakeFiles/racecarcontroller.dir/Renderer.cpp.o	e96423dcc4edbb26
-0	894	1675177962530278446	CMakeFiles/racecarcontroller.dir/Utility.cpp.o	a52c9e83ca658164
+2	715	1675273339231273318	CMakeFiles/racecarcontroller.dir/Shader.cpp.o	4920791c8a15a22e
+1147	1172	1675273339691292603	/home/anjar/sidejobs/racecar-controller/app/build/intermediates/cxx/Debug/6i1y1r3j/obj/x86_64/libracecarcontroller.so	e80e970b42e82d23
+1	892	1675273339411280865	CMakeFiles/racecarcontroller.dir/AndroidOut.cpp.o	fb47d1beb60613c1
+2	960	1675273339479283715	CMakeFiles/racecarcontroller.dir/TextureAsset.cpp.o	3161ea5eb3996d3e
+0	3	0	clean	215481b3485b3825
+1	1039	1675273339559287069	CMakeFiles/racecarcontroller.dir/main.cpp.o	7eb2b0f4049bcc89
+1	1147	1675273339667291597	CMakeFiles/racecarcontroller.dir/Renderer.cpp.o	e96423dcc4edbb26
+2	872	1675273339391280026	CMakeFiles/racecarcontroller.dir/Utility.cpp.o	a52c9e83ca658164

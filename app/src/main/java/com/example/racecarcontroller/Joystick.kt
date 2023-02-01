@@ -1,21 +1,23 @@
 package com.example.racecarcontroller
 
+import Scaler
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
-import android.util.Log
 import android.util.Range
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
-import android.view.View.MeasureSpec.getSize
 import android.widget.RelativeLayout
 import androidx.core.content.ContextCompat
 import com.example.racecarcontroller.databinding.JoystickBinding
+import java.time.Duration
+import java.time.LocalDateTime
 import java.util.*
+
+private const val TimerDuration = 50L
 
 class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context, attrs) {
 
@@ -25,10 +27,8 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
         scaler.isInverted = isInverted
     }
 
-    fun configureAnchoring(anchor: Float, anchorTolerance: Float = 1F, feedbackSpeed: Float = 0.2F) {
-        this.anchor = anchor
-        this.anchorTolerance = anchorTolerance
-        this.feedbackSpeed = feedbackSpeed
+    fun configureAnchoring(anchor: Float,  feedbackSpeed: Float = 0.2F, anchorTolerance: Float = 1F) {
+        anchoring.update(anchor, feedbackSpeed, anchorTolerance)
     }
 
     fun getPosition(): Float {
@@ -45,7 +45,7 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
     }
 
     fun setAnchor(anchor: Float){
-        this.anchor = anchor
+        configureAnchoring(anchor)
         invalidate()
     }
 
@@ -60,43 +60,21 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
     private lateinit var scaler: Scaler
     private var isVertical = true
     private var position: Float = 0F
-    private var anchor: Float = 0F
-    private var anchorTolerance: Float = 1F
-    private var feedbackSpeed = 0.2F
-
-
-    private fun isAtAnchor(p: Float): Boolean {
-        return Math.abs(p - anchor) < anchorTolerance
-    }
-
-    private fun pullToAnchor(newPosition: Float): Float {
-        val diff = (anchor - newPosition) * feedbackSpeed
-        var p = diff + newPosition
-        if (isAtAnchor(p)) {
-            p = anchor
-        }
-        return p
-    }
+    private lateinit var anchoring: Anchoring
 
 
     private fun setPosition(newPosition: Float) {
-        var p = newPosition
-        val range = scaler.virtualRange
-        if (p < range.lower) {
-            p = range.lower
-        } else if (p > range.upper) {
-            p = range.upper
-        }
-        position = p
+        position = Scaler.clip(scaler.virtualRange, newPosition)
     }
 
     init {
         val acquiredAttributes = context.obtainStyledAttributes(attrs, R.styleable.Joystick)
-        anchor = acquiredAttributes.getFloat(R.styleable.Joystick_anchor, 0F)
+        var anchor = acquiredAttributes.getFloat(R.styleable.Joystick_anchor, 0F)
         val rangeFrom = acquiredAttributes.getFloat(R.styleable.Joystick_rangeFrom, 0F)
         val rangeTo = acquiredAttributes.getFloat(R.styleable.Joystick_rangeTo, 100F)
         val isInverted = acquiredAttributes.getBoolean(R.styleable.Joystick_isInverted, false)
         val orientation = acquiredAttributes.getInt(R.styleable.Joystick_orientation, 1)
+        anchoring = Anchoring(anchor,  0.2F,  1F)
         isVertical = orientation == 1
         binding = JoystickBinding.inflate(LayoutInflater.from(context), this, true)
         scaler = Scaler(Range(rangeFrom, rangeTo),  {
@@ -130,7 +108,6 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
         }else{
             relativePosition = binding.thumb.x + event.x
         }
-        Log.i("JOYSTICK", "${position}")
         var isAdjustingPosition = false
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
@@ -149,7 +126,7 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
         }
         if (isAdjustingPosition) {
             setPosition(scaler.toVirtual(relativePosition))
-            mListener?.onJoystickMoved(this, position)
+            emitPositionEvent(true)
             binding.thumb.post {
                 renderPosition()
             }
@@ -199,7 +176,7 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
             this
         }
         val viewPosition = scaler.toView(position)
-        val viewAnchor = scaler.toView(anchor)
+        val viewAnchor = scaler.toView(anchoring.anchor)
         canvas.drawRoundRect(0F, 0F, w.toFloat(), h.toFloat(), buttonSize.toFloat()/2, buttonSize.toFloat()/2, background)
         canvas.drawRoundRect(padding, padding, w.toFloat()-padding, h.toFloat()-padding, thickness/2, thickness/2, line)
         var t = thickness/2
@@ -227,6 +204,16 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
         }
     }
 
+    private var lastEmittedPositionEvent: LocalDateTime  =  LocalDateTime.now()
+    private fun emitPositionEvent(isForced: Boolean){
+        val now =  LocalDateTime.now()
+        val duration = Duration.between(lastEmittedPositionEvent, now).abs()
+        if(!isForced && duration.toMillis() < TimerDuration){
+             return
+        }
+         listener?.onJoystickMoved(this, position)
+        lastEmittedPositionEvent = now
+    }
     private fun renderPosition() {
         val buttonSize = getButtonSize()
         drawBackground()
@@ -244,35 +231,35 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
         invalidate()
     }
 
+
     private fun startTimer() {
         timer = Timer()
         timer?.scheduleAtFixedRate(object : TimerTask() {
             override fun run() {
                 if (isDragging) {
+                    emitPositionEvent(false)
                     return
                 }
-                if (isAtAnchor(position)) {
+                if (anchoring.isAtAnchor(position)) {
                     return
                 }
 
                 binding.thumb.post {
-                    val p = pullToAnchor(position)
+                    val p = anchoring.pullToAnchor(position)
                     setPosition(p)
                     renderPosition()
                 }
+
             }
-        }, 0, 50)
+        }, 0, TimerDuration)
     }
 
-    private fun stopTimer() {
-        timer?.cancel()
-        timer = null
+
+    private var listener: OnJoystickListener? = null
+    fun setOnJoystickListener(listener: OnJoystickListener) {
+        this.listener = listener
     }
 
-    private var mListener: OnJoystickListener? = null
-    fun setOnCircleTappedListener(listener: OnJoystickListener?) {
-        mListener = listener
-    }
 }
 interface OnJoystickListener {
     fun onJoystickMoved(view: View, position: Float)

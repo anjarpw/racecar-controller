@@ -2,8 +2,9 @@ package com.example.racecarcontroller.ui.gamepad
 
 import android.util.Log
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.racecarcontroller.MutableWithCache
+import com.example.racecarcontroller.ThrottleBodyViewModel
 
 
 class GamepadState {
@@ -32,19 +33,20 @@ class GamepadState {
     }
 }
 
-class GamepadViewModel : ViewModel() {
-    private val _state = MutableLiveData<GamepadState>()
-    val state: LiveData<GamepadState>
-        get() = _state
+class GamepadViewModel(throttleBody: ThrottleBodyViewModel) : ViewModel() {
+    private val cachedIndicator = MutableWithCache<GamepadState>(GamepadState())
+    val indicator: LiveData<GamepadState>
+        get() = cachedIndicator.liveData
 
-    fun setState(newState: GamepadState) {
+    val throttleBody: ThrottleBodyViewModel = throttleBody
+    fun setIndicator(newState: GamepadState) {
         Log.d("GAMEPAD", newState.toString())
-        _state.value = newState
+        cachedIndicator.postValue(newState)
     }
 
-    fun changeState(function: (GamepadState) -> Unit) {
-        val newStateCopy: GamepadState = state.value?.copy() ?: GamepadState()
+    fun changeIndicator(function: (GamepadState) -> Unit) {
+        val newStateCopy: GamepadState = cachedIndicator.cachedValue?.copy() ?: GamepadState()
         function(newStateCopy)
-        this.setState(newStateCopy)
+        this.setIndicator(newStateCopy)
     }
 }

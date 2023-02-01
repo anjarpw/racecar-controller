@@ -6,8 +6,8 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.findViewTreeViewModelStoreOwner
 import com.example.racecarcontroller.MainActivityViewModel
+import com.example.racecarcontroller.OnJoystickListener
 import com.example.racecarcontroller.databinding.GamepadFragmentBinding
 
 class GamepadFragment : Fragment() {
@@ -35,10 +35,25 @@ class GamepadFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         binding = GamepadFragmentBinding.inflate(inflater, container, false)
+
+        binding!!.pedalJoystick.setOnJoystickListener(object: OnJoystickListener{
+            override fun onJoystickMoved(view: View, position: Float) {
+                Log.i("JOYSTICK","pedalChanged ${position}")
+                viewModel.throttleBody.forceThrottle(position)
+            }
+        })
+        binding!!.directionalJoystick.setOnJoystickListener(object: OnJoystickListener{
+            override fun onJoystickMoved(view: View, position: Float) {
+                Log.i("JOYSTICK","directionChanged ${position}")
+                viewModel.throttleBody.forceDirection(position)
+            }
+        })
+
         return binding!!.root
     }
+
+
     var gameControllerDeviceIds: MutableList<Int>? = null
 
     fun getGameControllerIds(): MutableList<Int> {
@@ -63,9 +78,16 @@ class GamepadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val b = binding!!
-        viewModel.state.observe(viewLifecycleOwner, Observer<GamepadState> { gamepad: GamepadState? ->
-            b.gamepadIndicator.updateGamepad(gamepad!!)
+        viewModel.indicator.observe(viewLifecycleOwner, Observer<GamepadState> { gamepad: GamepadState? ->
             Log.d("GAMEPAD OBSERVED", gamepad.toString())
+            b.gamepadIndicator.updateGamepad(gamepad!!)
+        })
+        viewModel.throttleBody.direction.observe(viewLifecycleOwner, { direction: Float ->
+            b.directionalIndicator.updateDirection(direction/100)
+        })
+        viewModel.throttleBody.speed.observe(viewLifecycleOwner, { speed: Float ->
+            b.speedIndicator.updateSpeed(speed, 100F)
+            b.speedNumber.text = "${speed.toInt()}"
         })
 
         b.refreshDevice.setOnClickListener {
