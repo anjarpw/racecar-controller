@@ -7,3 +7,10 @@
 1	2485	1675273335011095634	CMakeFiles/racecarcontroller.dir/main.cpp.o	f97f7b60696b262
 24	2272	1675273334795086495	CMakeFiles/racecarcontroller.dir/Renderer.cpp.o	2777cc26be2d4727
 56	1579	1675273334111057556	CMakeFiles/racecarcontroller.dir/Utility.cpp.o	6fb619d281574510
+1	646	1675284522003014667	CMakeFiles/racecarcontroller.dir/Shader.cpp.o	96add2a275c84af2
+1	781	1675284522135009792	CMakeFiles/racecarcontroller.dir/Utility.cpp.o	6fb619d281574510
+1	798	1675284522151009201	CMakeFiles/racecarcontroller.dir/AndroidOut.cpp.o	a7c750464f351e4d
+1	882	1675284522235006098	CMakeFiles/racecarcontroller.dir/TextureAsset.cpp.o	b28bc641f1f8cd28
+1	1094	1675284522446998269	CMakeFiles/racecarcontroller.dir/Renderer.cpp.o	2777cc26be2d4727
+0	1097	1675284522450998121	CMakeFiles/racecarcontroller.dir/main.cpp.o	f97f7b60696b262
+1097	1127	1675284522482996939	/home/anjar/sidejobs/racecar-controller/app/build/intermediates/cxx/Debug/6i1y1r3j/obj/armeabi-v7a/libracecarcontroller.so	e89a2c0534e3e01b

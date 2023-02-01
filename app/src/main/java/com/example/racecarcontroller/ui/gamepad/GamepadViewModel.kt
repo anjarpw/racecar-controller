@@ -34,9 +34,13 @@ class GamepadState {
 }
 
 class GamepadViewModel(throttleBody: ThrottleBodyViewModel) : ViewModel() {
-    private val cachedIndicator = MutableWithCache<GamepadState>(GamepadState())
+    private val cachedIndicator = MutableWithCache(GamepadState())
     val indicator: LiveData<GamepadState>
         get() = cachedIndicator.liveData
+
+    fun getCachedIndicatorValue(): GamepadState{
+        return cachedIndicator.cachedValue
+    }
 
     val throttleBody: ThrottleBodyViewModel = throttleBody
     fun setIndicator(newState: GamepadState) {

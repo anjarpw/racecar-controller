@@ -53,15 +53,14 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
         setRange(scaler.virtualRange, isInverted)
     }
 
-    private var isDragging = false
-    private lateinit var binding: JoystickBinding
-    private var timer: Timer? = null
-
-    private lateinit var scaler: Scaler
-    private var isVertical = true
     private var position: Float = 0F
-    private lateinit var anchoring: Anchoring
+    private var isDragging = false
 
+    private val binding: JoystickBinding
+    private val scaler: Scaler
+    private var isVertical = true
+    private val anchoring: Anchoring
+    private val timeLooper: TimeLooper
 
     private fun setPosition(newPosition: Float) {
         position = Scaler.clip(scaler.virtualRange, newPosition)
@@ -84,13 +83,27 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
                 return@Scaler Range(binding.thumb.width / 2, this.width - binding.thumb.width / 2)
             }
         }, isInverted)
-        startTimer()
         binding.thumb.setOnTouchListener { v, event ->
             handlePosition(event)
             true
         }
         acquiredAttributes.recycle()
         setPosition(anchor)
+        timeLooper = TimeLooper(TimerDuration){
+            if (isDragging) {
+                emitPositionEvent(false)
+                return@TimeLooper
+            }
+            if (anchoring.isAtAnchor(position)) {
+                return@TimeLooper
+            }
+            binding.thumb.post {
+                val p = anchoring.pullToAnchor(position)
+                setPosition(p)
+                renderPosition()
+            }
+        }
+        timeLooper.ensureTimerStart()
     }
 
     private fun getButtonSize(): Int {
@@ -232,27 +245,6 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
     }
 
 
-    private fun startTimer() {
-        timer = Timer()
-        timer?.scheduleAtFixedRate(object : TimerTask() {
-            override fun run() {
-                if (isDragging) {
-                    emitPositionEvent(false)
-                    return
-                }
-                if (anchoring.isAtAnchor(position)) {
-                    return
-                }
-
-                binding.thumb.post {
-                    val p = anchoring.pullToAnchor(position)
-                    setPosition(p)
-                    renderPosition()
-                }
-
-            }
-        }, 0, TimerDuration)
-    }
 
 
     private var listener: OnJoystickListener? = null

@@ -2,133 +2,133 @@ C/C++ Structured Log~
 |
 z/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefabC
 A
-?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	¢”¬õà0ˆ
+?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	ƒÏôõà0ˆ
 …
-‚/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules	¢”¬õà0“
+‚/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules	ƒÏôõà0“
 
-/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat	¢”¬õà0›
+/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat	ƒÏôõà0›
 ˜
-•/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include	¢”¬õà0¢
+•/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include	ƒÏôõà0¢
 Ÿ
-œ/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include/common	¢”¬õà0³
+œ/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include/common	ƒÏôõà0³
 °
-­/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include/common/gamesdk_common.h	¢”¬õà0‰ “ÿ¢Ş0¦
+­/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include/common/gamesdk_common.h	ƒÏôõà0‰ “ÿ¢Ş0¦
 £
- /home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include/paddleboat	¢”¬õà0³
+ /home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include/paddleboat	ƒÏôõà0³
 °
-­/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include/paddleboat/paddleboat.h	¢”¬õà0	ÈŒ “ÿ¢Ş0˜
+­/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/include/paddleboat/paddleboat.h	ƒÏôõà0	ÈŒ “ÿ¢Ş0˜
 •
-’/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs	¢”¬õà0
+’/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs	ƒÏôõà0
 ª
 §
-¤/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.arm64-v8a	¢”¬õà0³
+¤/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.arm64-v8a	ƒÏôõà0³
 °
-­/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.arm64-v8a/abi.json	¢”¬õà0\ “ÿ¢Ş0»
+­/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.arm64-v8a/abi.json	ƒÏôõà0\ “ÿ¢Ş0»
 ¸
-µ/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.arm64-v8a/libpaddleboat.so	¢”¬õà0 ¹ —ÿ¢Ş0¬
+µ/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.arm64-v8a/libpaddleboat.so	ƒÏôõà0 ¹ —ÿ¢Ş0¬
 ©
-¦/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.armeabi-v7a	¢”¬õà0µ
+¦/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.armeabi-v7a	ƒÏôõà0µ
 ²
-¯/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.armeabi-v7a/abi.json	¢”¬õà0^ —ÿ¢Ş0½
+¯/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.armeabi-v7a/abi.json	ƒÏôõà0^ —ÿ¢Ş0½
 º
-·/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.armeabi-v7a/libpaddleboat.so	¢”¬õà0ÔŸ ›ÿ¢Ş0¤
+·/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.armeabi-v7a/libpaddleboat.so	ƒÏôõà0ÔŸ ›ÿ¢Ş0¤
 ¡
-/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86	¢”¬õà0­
+/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86	ƒÏôõà0­
 ª
-§/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86/abi.json	¢”¬õà0V ›ÿ¢Ş0µ
+§/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86/abi.json	ƒÏôõà0V ›ÿ¢Ş0µ
 ²
-¯/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86/libpaddleboat.so	¢”¬õà0 ù ›ÿ¢Ş0§
+¯/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86/libpaddleboat.so	ƒÏôõà0 ù ›ÿ¢Ş0§
 ¤
-¡/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86_64	¢”¬õà0°
+¡/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86_64	ƒÏôõà0°
 ­
-ª/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86_64/abi.json	¢”¬õà0Y ›ÿ¢Ş0¸
+ª/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86_64/abi.json	ƒÏôõà0Y ›ÿ¢Ş0¸
 µ
-²/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86_64/libpaddleboat.so	¢”¬õà0à› Ÿÿ¢Ş0Ÿ
+²/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/libs/android.x86_64/libpaddleboat.so	ƒÏôõà0à› Ÿÿ¢Ş0Ÿ
 œ
-™/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/module.json	¢”¬õà0- “ÿ¢Ş0š
+™/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat/module.json	ƒÏôõà0- “ÿ¢Ş0š
 —
-”/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static	¢”¬õà0¢
+”/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static	ƒÏôõà0¢
 Ÿ
-œ/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include	¢”¬õà0©
+œ/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include	ƒÏôõà0©
 ¦
-£/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include/common	¢”¬õà0º
+£/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include/common	ƒÏôõà0º
 ·
-´/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include/common/gamesdk_common.h	¢”¬õà0‰ Ÿÿ¢Ş0­
+´/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include/common/gamesdk_common.h	ƒÏôõà0‰ Ÿÿ¢Ş0­
 ª
-§/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include/paddleboat	¢”¬õà0º
+§/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include/paddleboat	ƒÏôõà0º
 ·
-´/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include/paddleboat/paddleboat.h	¢”¬õà0ÈŒ Ÿÿ¢Ş0Ÿ
+´/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/include/paddleboat/paddleboat.h	ƒÏôõà0ÈŒ Ÿÿ¢Ş0Ÿ
 œ
-™/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs	¢”¬õà0±
+™/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs	ƒÏôõà0±
 ®
-«/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.arm64-v8a	¢”¬õà0º
+«/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.arm64-v8a	ƒÏôõà0º
 ·
-´/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.arm64-v8a/abi.json	¢”¬õà0 [ £ÿ¢Ş0È
+´/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.arm64-v8a/abi.json	ƒÏôõà0 [ £ÿ¢Ş0È
 Å
-Â/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.arm64-v8a/libpaddleboat_static.a	¢”¬õà0!òœ* §ÿ¢Ş0³
+Â/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.arm64-v8a/libpaddleboat_static.a	ƒÏôõà0!òœ* §ÿ¢Ş0³
 °
-­/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.armeabi-v7a	¢”¬õà0"¼
+­/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.armeabi-v7a	ƒÏôõà0"¼
 ¹
-¶/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.armeabi-v7a/abi.json	¢”¬õà0#] §ÿ¢Ş0Ê
+¶/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.armeabi-v7a/abi.json	ƒÏôõà0#] §ÿ¢Ş0Ê
 Ç
-Ä/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.armeabi-v7a/libpaddleboat_static.a	¢”¬õà0$òÅ «ÿ¢Ş0«
+Ä/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.armeabi-v7a/libpaddleboat_static.a	ƒÏôõà0$òÅ «ÿ¢Ş0«
 ¨
-¥/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86	¢”¬õà0%´
+¥/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86	ƒÏôõà0%´
 ±
-®/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86/abi.json	¢”¬õà0&U «ÿ¢Ş0Â
+®/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86/abi.json	ƒÏôõà0&U «ÿ¢Ş0Â
 ¿
-¼/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86/libpaddleboat_static.a	¢”¬õà0'¶¡ ¯ÿ¢Ş0®
+¼/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86/libpaddleboat_static.a	ƒÏôõà0'¶¡ ¯ÿ¢Ş0®
 «
-¨/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86_64	¢”¬õà0(·
+¨/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86_64	ƒÏôõà0(·
 ´
-±/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86_64/abi.json	¢”¬õà0)X ¯ÿ¢Ş0Å
+±/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86_64/abi.json	ƒÏôõà0)X ¯ÿ¢Ş0Å
 Â
-¿/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86_64/libpaddleboat_static.a	¢”¬õà0*Ò¡' ³ÿ¢Ş0¦
+¿/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/libs/android.x86_64/libpaddleboat_static.a	ƒÏôõà0*Ò¡' ³ÿ¢Ş0¦
 £
- /home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/module.json	¢”¬õà0+- Ÿÿ¢Ş0Œ
+ /home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/modules/paddleboat_static/module.json	ƒÏôõà0+- Ÿÿ¢Ş0Œ
 ‰
-†/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/prefab.json	¢”¬õà0,M “ÿ¢Ş0t
+†/home/anjar/.gradle/caches/transforms-3/5f06da7fdffe06cce987f48c709ba0ce/transformed/games-controller-2.0.0-alpha01/prefab/prefab.json	ƒÏôõà0,M “ÿ¢Ş0t
 r
-p/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab	¢”¬õà0-|
+p/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab	ƒÏôõà0-|
 z
-x/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules	¢”¬õà0.Œ
+x/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules	ƒÏôõà0.Œ
 ‰
-†/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity	¢”¬õà0/”
+†/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity	ƒÏôõà0/”
 ‘
-/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include	¢”¬õà00¢
+/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include	ƒÏôõà00¢
 Ÿ
-œ/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity	¢”¬õà01³
+œ/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity	ƒÏôõà01³
 °
-­/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/GameActivity.cpp	¢”¬õà02·¸ Ã­ÂŞ0±
+­/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/GameActivity.cpp	ƒÏôõà02·¸ Ã­ÂŞ0±
 ®
-«/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/GameActivity.h	¢”¬õà03¨Ğ Ã­ÂŞ0²
+«/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/GameActivity.h	ƒÏôõà03¨Ğ Ã­ÂŞ0²
 ¯
-¬/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/native_app_glue	¢”¬õà04Ì
+¬/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/native_app_glue	ƒÏôõà04Ì
 É
-Æ/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/native_app_glue/android_native_app_glue.c	¢”¬õà05Ü‰ Ã­ÂŞ0Ì
+Æ/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/native_app_glue/android_native_app_glue.c	ƒÏôõà05Ü‰ Ã­ÂŞ0Ì
 É
-Æ/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/native_app_glue/android_native_app_glue.h	¢”¬õà06×f Ã­ÂŞ0¤
+Æ/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-activity/native_app_glue/android_native_app_glue.h	ƒÏôõà06×f Ã­ÂŞ0¤
 ¡
-/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-text-input	¢”¬õà07¶
+/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-text-input	ƒÏôõà07¶
 ³
-°/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-text-input/gametextinput.cpp	¢”¬õà08ª[ Ã­ÂŞ0´
+°/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-text-input/gametextinput.cpp	ƒÏôõà08ª[ Ã­ÂŞ0´
 ±
-®/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-text-input/gametextinput.h	¢”¬õà09¤G Ã­ÂŞ0˜
+®/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/include/game-text-input/gametextinput.h	ƒÏôõà09¤G Ã­ÂŞ0˜
 •
-’/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/module.json	¢”¬õà0:c Ã­ÂŞ0€
+’/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/modules/game-activity/module.json	ƒÏôõà0:c Ã­ÂŞ0€
 ~
-|/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/prefab.json	¢”¬õà0;O Ã­ÂŞ0a
+|/home/anjar/.gradle/caches/transforms-3/c9d8e9b65fa583cf14531ec728d824f8/transformed/games-activity-1.0.0/prefab/prefab.json	ƒÏôõà0;O Ã­ÂŞ0a
 _
-]/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/android_gradle_build.json	¢”¬õà0<Æ	 ™”¬õà0S
+]/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/android_gradle_build.json	ƒÏôõà0<Æ	 úÎôõà0S
 Q
-O/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/build.ninja	¢”¬õà0=Ã† ‘”¬õà0W
+O/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/build.ninja	ƒÏôõà0=Ã† òÎôõà0W
 U
-S/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/build.ninja.txt	¢”¬õà0>]
+S/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/build.ninja.txt	ƒÏôõà0>]
 [
-Y/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/compile_commands.json	¢”¬õà0?«, ‘”¬õà0g
+Y/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/compile_commands.json	ƒÏôõà0?«, òÎôõà0g
 e
-c/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/metadata_generation_command.txt	¢”¬õà0@Ç €â†Ãà0Z
+c/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/metadata_generation_command.txt	ƒÏôõà0@Ç €â†Ãà0Z
 X
-V/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/prefab_config.json	¢”¬õà0A¼ €â†Ãà0K
+V/home/anjar/sidejobs/racecar-controller/app/.cxx/Debug/6i1y1r3j/x86/prefab_config.json	ƒÏôõà0A¼ €â†Ãà0K
 I
-G/home/anjar/sidejobs/racecar-controller/app/src/main/cpp/CMakeLists.txt	¢”¬õà0B‰ ”³…ÄŞ0
+G/home/anjar/sidejobs/racecar-controller/app/src/main/cpp/CMakeLists.txt	ƒÏôõà0B‰ ”³…ÄŞ0

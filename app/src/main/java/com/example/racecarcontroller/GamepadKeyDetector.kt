@@ -8,6 +8,26 @@ import com.example.racecarcontroller.ui.gamepad.GamepadViewModel
 class GamepadKeyDetector(gamepadViewModel: GamepadViewModel) {
 
     val gamepadViewModel = gamepadViewModel
+    val timeLooper: TimeLooper
+
+    init{
+        timeLooper = TimeLooper(50L){
+            val indicator = gamepadViewModel.getCachedIndicatorValue()
+            if(indicator.buttonB){
+                gamepadViewModel.throttleBody.forceThrottle(-20F)
+            }
+            if(indicator.buttonA){
+                gamepadViewModel.throttleBody.forceThrottle(100F)
+            }
+            if(indicator.buttonLeft){
+                gamepadViewModel.throttleBody.forceDirection(-100F)
+            }
+            if(indicator.buttonRight){
+                gamepadViewModel.throttleBody.forceDirection(100F)
+            }
+        }
+        timeLooper.ensureTimerStart()
+    }
 
     fun getDirectionPressed(event: MotionEvent): Int {
         if (!isDpadDevice(event)) {
@@ -106,7 +126,6 @@ class GamepadKeyDetector(gamepadViewModel: GamepadViewModel) {
                     KeyEvent.KEYCODE_BUTTON_A -> {
                         gamepadViewModel.changeIndicator { x -> x.buttonA = true }
                         gamepadViewModel.throttleBody.forceThrottle(100F)
-
                         isHandled = true
                     }
                     KeyEvent.KEYCODE_BUTTON_B -> {
