@@ -1,12 +1,19 @@
 package com.example.racecarcontroller
 
 import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
 import android.util.AttributeSet
 import android.util.Log
 import android.util.Range
 import android.view.LayoutInflater
 import android.view.MotionEvent
+import android.view.View
+import android.view.View.MeasureSpec.getSize
 import android.widget.RelativeLayout
+import androidx.core.content.ContextCompat
 import com.example.racecarcontroller.databinding.JoystickBinding
 import java.util.*
 
@@ -141,26 +148,93 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
             }
         }
         if (isAdjustingPosition) {
+            setPosition(scaler.toVirtual(relativePosition))
+            mListener?.onJoystickMoved(this, position)
             binding.thumb.post {
-                setPosition(scaler.toVirtual(relativePosition))
                 renderPosition()
             }
         }
     }
 
-    override fun onLayout(changed: Boolean, l: Int, t: Int, r: Int, b: Int) {
-        super.onLayout(changed, l, t, r, b)
+
+    override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+        super.onSizeChanged(w, h, oldw, oldh)
         renderPosition()
     }
+
+
+    private fun drawBackground(){
+        val buttonSize = getButtonSize()
+        val w = this.width
+        val h = this.height
+        val bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
+        val canvas = Canvas(bmp)
+        val thickness = 50F
+        val padding = (buttonSize-thickness)/2
+        val background: Paint = with(Paint()){
+            color = ContextCompat.getColor(context, R.color.black)
+            style = Paint.Style.FILL
+            isAntiAlias = true
+            setAlpha(32)
+            this
+        }
+        val line: Paint = with(Paint()){
+            color = ContextCompat.getColor(context, R.color.black)
+            style = Paint.Style.FILL
+            isAntiAlias = true
+            setAlpha(128)
+            this
+        }
+        val activeLine: Paint = with(Paint()){
+            color = ContextCompat.getColor(context, R.color.red_engine)
+            style = Paint.Style.FILL
+            isAntiAlias = true
+            this
+        }
+        val dash: Paint = with(Paint()){
+            color = ContextCompat.getColor(context, R.color.red_body)
+            style = Paint.Style.FILL
+            isAntiAlias = true
+            setAlpha(40)
+            this
+        }
+        val viewPosition = scaler.toView(position)
+        val viewAnchor = scaler.toView(anchor)
+        canvas.drawRoundRect(0F, 0F, w.toFloat(), h.toFloat(), buttonSize.toFloat()/2, buttonSize.toFloat()/2, background)
+        canvas.drawRoundRect(padding, padding, w.toFloat()-padding, h.toFloat()-padding, thickness/2, thickness/2, line)
+        var t = thickness/2
+        if(viewPosition>viewAnchor){
+            t = -thickness/2
+        }
+        if(isVertical){
+            canvas.drawRect(0F, viewPosition, buttonSize.toFloat(), viewAnchor, dash)
+            canvas.drawRoundRect(padding, viewPosition-t, w.toFloat()-padding, viewAnchor+t, thickness/2, thickness/2, activeLine)
+        }else{
+            canvas.drawRect(viewPosition, 0F,viewAnchor,  buttonSize.toFloat(), dash)
+            canvas.drawRoundRect(viewPosition-t, padding, viewAnchor+t, h.toFloat()-padding, thickness/2, thickness/2, activeLine)
+        }
+
+
+        binding.bg.setImageBitmap(bmp)
+    }
+
+    var isFirstRendered = false
+    override fun onLayout(changed: Boolean, l: Int, t: Int, r: Int, b: Int) {
+        super.onLayout(changed, l, t, r, b)
+        if(!isFirstRendered){
+            renderPosition()
+            isFirstRendered = true
+        }
+    }
+
     private fun renderPosition() {
         val buttonSize = getButtonSize()
-
+        drawBackground()
+        binding.thumb.text = ""
         var newViewPosition = scaler.toView(position)
         val layoutParams = LayoutParams(binding.thumb.layoutParams)
-        if(buttonSize > 0){
-            layoutParams.width = buttonSize
-            layoutParams.height = buttonSize
-        }
+        layoutParams.width = buttonSize
+        layoutParams.height = buttonSize
         if(isVertical) {
             layoutParams.topMargin = newViewPosition.toInt() - buttonSize / 2
         }else{
@@ -194,4 +268,13 @@ class Joystick(context: Context, attrs: AttributeSet?) : RelativeLayout(context,
         timer?.cancel()
         timer = null
     }
+
+    private var mListener: OnJoystickListener? = null
+    fun setOnCircleTappedListener(listener: OnJoystickListener?) {
+        mListener = listener
+    }
 }
+interface OnJoystickListener {
+    fun onJoystickMoved(view: View, position: Float)
+}
+

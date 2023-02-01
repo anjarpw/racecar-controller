@@ -5,6 +5,7 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.util.Log
 import android.view.View
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.findViewTreeViewModelStoreOwner
 import com.example.racecarcontroller.ui.gamepad.GamepadState
@@ -34,18 +35,23 @@ class GamepadIndicator : View {
             center.y + dimension.y / 2
         )
     }
+    val off: Paint = with(Paint()){
+        color = ContextCompat.getColor(context, R.color.black)
+        style = Paint.Style.FILL
+        isAntiAlias = true
+        this
+    }
 
+    var on: Paint = with(Paint()){
+        color = ContextCompat.getColor(context, R.color.red_engine)
+        style = Paint.Style.FILL
+        isAntiAlias = true
+        this
+    }
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        var off = Paint()
-        off.color = resources.getColor(R.color.black)
-        off.style = Paint.Style.FILL
-        off.isAntiAlias = true
 
-        var on = Paint()
-        on.color = resources.getColor(R.color.red_engine)
-        on.style = Paint.Style.FILL
-        on.isAntiAlias = true
+
 
         var blockSize = this.resolver.getNormalizedSize(1F, 1F)
         var directionalButtonSize = this.resolver.getNormalizedSize(0.9F, 0.9F)

@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
+import androidx.core.content.ContextCompat
 
 
 class DirectionalIndicator : View {
@@ -18,24 +19,27 @@ class DirectionalIndicator : View {
     private var resolver: DimensionResolver
 
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
-        this.resolver = DimensionResolver(this, RectF(0F, 0F,10F, 2F))
+        this.resolver = DimensionResolver(this, RectF(0F, 0F, 10F, 2F))
         updateDirection(-0.5F)
     }
 
+    val thinLine: Paint = with(Paint()){
+        color = ContextCompat.getColor(context, R.color.black)
+        style = Paint.Style.STROKE
+        isAntiAlias = true
+        strokeWidth = 4F
+        this
+    }
+
+    var on: Paint = with(Paint()){
+        color = ContextCompat.getColor(context, R.color.red_engine)
+        style = Paint.Style.FILL
+        isAntiAlias = true
+        this
+    }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-
-        var thinLine = Paint()
-        thinLine.color = resources.getColor(R.color.black)
-        thinLine.style = Paint.Style.STROKE
-        thinLine.isAntiAlias = true
-        thinLine.strokeWidth = 4F
-
-        var on = Paint()
-        on.color = resources.getColor(R.color.red_engine)
-        on.style = Paint.Style.FILL
-        on.isAntiAlias = true
 
         val baseLine = 1.2F
         val bigScale = 2F
